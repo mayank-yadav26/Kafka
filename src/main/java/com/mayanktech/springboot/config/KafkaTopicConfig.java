@@ -15,5 +15,13 @@ public class KafkaTopicConfig {
                 .replicas(1)
 				.build();
 	}
+    
+    @Bean
+    public NewTopic myJsonTopic() {
+		return TopicBuilder.name("mayankTech_json")
+				.partitions(1)
+                .replicas(1)
+				.build();
+	}
 
 }
